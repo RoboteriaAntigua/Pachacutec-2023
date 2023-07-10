@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.header {
+
+  text-align: center;
+  background-image: url('https://res.cloudinary.com/dghwcediy/image/upload/v1682618862/grl_arboles_lindos_vldnyo.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 50% 70%;
+  color: white;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  }
+  .fondo {
+    background-color: black;
+    height:100%;
+  }

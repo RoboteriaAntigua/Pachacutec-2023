@@ -1,0 +1,93 @@
+
+/* Style the top navigation bar */
+.navbar2 {
+  display: flex;
+  background-color: #1f1e1e;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px white;
+}
+
+.navbar-hide {
+  display: flex;
+  background-color: #1f1e1e;
+  border-radius: 8px;
+  box-shadow: 2px 2px 15px white;
+  width: 100%;
+}
+
+/* Style the navigation bar links */
+.navbar-hide a {
+  color: rgb(217, 217, 217);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar-hide a:hover {
+  color: grey;
+  user-select: none;
+}
+
+.navbar2 .menu {
+  display: none;
+  color: rgb(217, 217, 217);
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.active2 {
+  background-color: #442d00;
+}
+
+.logo_small {
+  margin-right: 2rem;
+  border-radius: 50%; box-shadow: 2px 2px 10px rgb(166, 188, 249);
+}
+
+/* Responsive Styles */
+
+/**************Pantallas mas chiquitas ***********************************/
+@media screen and (max-width: 767px) {
+  .navegarSitio {
+    border: 2px solid grey;
+    padding: 4px;
+    border-radius: 8px;
+  }
+  .logo_small {
+    margin-right: 2rem;
+    border-radius: 50%; box-shadow: 2px 2px 10px rgb(166, 188, 249);
+  }
+  .navbar2 a {
+    border: 1px solid rgb(21, 21, 21);
+    user-select: none;
+  }
+
+  .navbar-hide {
+    display: none;
+  }
+
+  .navbar2 .menu {
+    display: inline-flex;
+  }
+
+  #ocultarmenu {
+    display: none;
+  }
+
+  /* Change color on hover */
+  .navbar-hide a:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgb(93, 169, 255);
+    user-select: none;
+  }
+
+  .navbar2 a:active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgb(93, 169, 255);
+    user-select: none;
+  }
+
+}

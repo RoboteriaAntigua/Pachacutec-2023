@@ -1,0 +1,50 @@
+
+  /* Para el titulo */
+  h1 {
+    font-size: 50px;
+    padding-left: 20%;
+  }
+   /* Para las card que se agrandan con el mouse hover*/
+   .card1 {
+    width: 18rem;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 2px 2px 15px rgb(0, 0, 2);
+    text-align: center;
+    transition: width 6s, height 2s;
+    border-radius: 8px;
+    padding:0px;
+}
+
+.card1:hover {
+  transition-delay: 0.5s;
+    width:350px; height: auto;
+}
+
+
+.card1-body {
+  padding:5px;
+}
+
+.card1 img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Para el titulo */
+h1 {
+  font-size: 50px;
+  padding-left: 20%;
+}
+
+@media screen and (max-width: 767px) {
+.card1 {
+  width: 30%;
+  border-radius: 8px;
+}
+.card-title {
+  font-size: 12px;
+  overflow-x: auto;
+}
+
+}

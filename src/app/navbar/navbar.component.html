@@ -1,0 +1,28 @@
+<div class="navbar2">
+  <div class="navbar-hide" id="navbarhide">
+    <a [routerLink]="['/home']" (click)="ocultar_menu()">
+      <img class="logo_small" src="https://res.cloudinary.com/dghwcediy/image/upload/v1682618859/logo_tsngiv.jpg"
+        alt="Logo Pachacutec" height="36">
+      Home</a>
+    <a [routerLink]="['/cultural']" (click)="ocultar_menu()" style="margin-top:5px;">Cultural</a>
+    <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#idContacto" (click)="ocultar_menu()"
+      style="margin-top:5px;">
+      Contactanos</a>
+    <a [routerLink]="['/productos']" (click)="ocultar_menu()" style="margin-top:5px;">Catálogo de especies</a>
+    <a style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#idAcercade" (click)="ocultar_menu()"
+      style="margin-top:5px;">
+      Acerca de</a>
+  </div>
+  <a class="menu" (click)="agregar_propiedades()" id="ocultar">
+    <img class="logo_small" src="https://res.cloudinary.com/dghwcediy/image/upload/v1682618859/logo_tsngiv.jpg"
+      alt="Logo Pachacutec" height="36">
+    <div class="navegarSitio">
+      Navegar el sitio </div>
+  </a>
+</div>
+
+<!--The modal acerca de-->
+<app-acercade></app-acercade>
+
+<!-- The Modal Contacto-->
+<app-contacto></app-contacto>

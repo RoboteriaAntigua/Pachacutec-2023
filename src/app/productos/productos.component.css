@@ -1,0 +1,55 @@
+   /* Para las card que se agrandan con el mouse hover*/
+   .card1 {
+    width: 15rem;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 2px 2px 15px rgb(0, 0, 2);
+    text-align: center;
+    transition: width 6s, height 2s;
+
+}
+
+.card1:hover {
+  transition-delay: 0.5s;
+    width:350px; height: auto;
+}
+
+.card1:active {
+  transition: width 0.1s, height 0.4s;
+  width:350px; height: auto;
+}
+
+.card1-body {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Para el titulo */
+h1 {
+  font-size: 50px;
+  padding-left: 20%;
+}
+
+.descarga_pdf{
+  display:none;
+}
+
+.titulo-catalogo {
+  margin-top:10%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width:767px){
+  .descarga_pdf {
+    display:block;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+  .titulo-catalogo {
+    margin-top:20%;
+  }
+}
