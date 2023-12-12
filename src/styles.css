@@ -1,15 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
 .header {
-
-  text-align: center;
-  background-image: url('https://res.cloudinary.com/dghwcediy/image/upload/v1682618862/grl_arboles_lindos_vldnyo.jpg');
+  text-align: left;
+  background-image: url('https://res.cloudinary.com/dghwcediy/image/upload/v1694121549/pacha%20nuevo/headerPartido2_qjegww.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: 50% 70%;
-  color: white;
-  text-shadow: 2px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 1px 2px rgb(0, 0, 0);
   }
+
   .fondo {
     background-color: black;
     height:100%;
   }
+
+  .contenedora {
+    margin-left:15%;
+    margin-right:15%;
+    margin-top:4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+
+
+
+.titulo {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.tituloHeader {
+  padding:20px;
+}
+.tituloHeader h2 {
+  font-size: 48px;
+}
+.tituloHeader h1 {
+  font-size: small;
+  padding-left: 50px;
+}
+
+@media screen and (max-width:767px){
+  .header {
+    background-position: 70%;
+  }
+  .tituloHeader h2 {
+    font-size:large;
+    padding-top: 5px;
+  }
+  .tituloHeader h1 {
+    font-size: small;
+    padding-left: 5px;
+  }
+
+  .contenedora {
+    margin-left:1%;
+    margin-right:1%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}

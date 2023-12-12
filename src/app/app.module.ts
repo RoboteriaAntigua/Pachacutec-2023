@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { CaruselComponent } from './carusel/carusel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductosEnIndexComponent } from './productos-en-index/productos-en-index.component';
@@ -11,9 +10,8 @@ import { CulturalComponent } from './cultural/cultural.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
 import { AcercadeComponent } from './acercade/acercade.component';
-import { CatalogoDeEspeciesComponent } from './catalogo-de-especies/catalogo-de-especies.component';
-import { NuestrosServiciosComponent } from './nuestros-servicios/nuestros-servicios.component';
-import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { CardsLinksComponent } from './cards-links/cards-links.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 
    const routes: Routes = [
                            {
@@ -22,13 +20,17 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
                            },
                            {
                              path: 'cultural',
-                             component: CulturalComponent,
+                             loadChildren: ()=> import('./cultural/cultural.module').then( c => c.CulturalModule)
                            },
                            {
                              path: 'productos',
-                             component: ProductosComponent,
+                             loadChildren: () => import('./productos/productos.module').then(p =>p.ProductosModule)
                            },
-                            {
+                           {
+                            path:'servicios',
+                            loadChildren: () => import('./servicios/servicios.module').then(s => s.ServiciosModule )
+                          },
+                          {
                             path: '',
                             redirectTo: '/home',
                             pathMatch: 'full',
@@ -38,7 +40,6 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 @NgModule({
   declarations: [
     AppComponent,
-    CaruselComponent,
     NavbarComponent,
     FooterComponent,
     ProductosEnIndexComponent,
@@ -47,13 +48,12 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ContactoComponent,
     HomeComponent,
     AcercadeComponent,
-    CatalogoDeEspeciesComponent,
-    NuestrosServiciosComponent,
+    CardsLinksComponent,
+    ServiciosComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    LazyLoadImageModule
+    RouterModule.forRoot(routes)
   ],
   providers: [
 
@@ -61,3 +61,4 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

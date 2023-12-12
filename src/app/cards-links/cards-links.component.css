@@ -1,3 +1,9 @@
+
+  /* Para el titulo */
+  h1 {
+    font-size: 50px;
+    padding-left: 20%;
+  }
    /* Para las card que se agrandan con el mouse hover*/
    .card1 {
     width: 15rem;
@@ -6,7 +12,16 @@
     box-shadow: 2px 2px 15px rgb(0, 0, 2);
     text-align: center;
     transition: width 6s, height 2s;
+    border-radius: 8px;
+    padding:0px;
+}
+  .card1 img {
+    height:200px;
+  }
 
+.card1 a {
+  text-decoration:none;
+  color:black
 }
 
 .card1:hover {
@@ -14,17 +29,14 @@
     width:350px; height: auto;
 }
 
-.card1:active {
-  transition: width 0.1s, height 0.4s;
-  width:350px; height: auto;
-}
 
 .card1-body {
-  padding: 10px;
+  padding:5px;
 }
 
-img {
+.card1 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 /* Para el titulo */
@@ -33,26 +45,18 @@ h1 {
   padding-left: 20%;
 }
 
-.descarga_pdf{
-  display:none;
+.row {
+  justify-content:center;
 }
 
-.titulo-catalogo {
-  margin-top:5%;
+@media screen and (max-width: 767px) {
+.card1 {
+
 
 }
+.card-title {
+  font-size: 12px;
+  overflow-x: auto;
+}
 
-
-@media screen and (max-width:767px){
-  .descarga_pdf {
-    display:block;
-    margin-left:10%;
-    margin-right: 10%;
-    margin-bottom: 5%;
-  }
-  .titulo-catalogo {
-    margin-top:10%;
-    font-size: large;
-
-  }
 }
